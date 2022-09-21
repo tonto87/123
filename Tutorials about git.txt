@@ -11,4 +11,14 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
 6 git commit 
 7 git push
 
+
+8 git fayllari silmek
+A very simple answer is.
+Step 1:
+Firstly add your untracked files to which you want to delete:
+using git add . or git add <filename>.
+Step 2:
+Then delete them easily using command git rm -f <filename> here rm=remove and -f=forcely.
+
+
 and get learn more 11:15 pm 21.09.2022
