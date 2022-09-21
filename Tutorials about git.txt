@@ -2,7 +2,7 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
 
 
 
-1 git clone
+1 git clone  "fayl repository from web https or ssh"
 2 git add  "file name"
 3 git commit fayl basligidi
 4 git push
