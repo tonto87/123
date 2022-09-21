@@ -1,0 +1,14 @@
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+
+
+1 git clone
+2 git add  "file name"
+3 git commit fayl basligidi
+4 git push
+
+5 git add .  latest file changed
+6 git commit 
+7 git push
+
+and get learn more 11:15 pm 21.09.2022
