@@ -17,7 +17,7 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
     ve ya github.com da settingsde en asagida developer settingsde he pc ye gore token yaratmaq
     ve ya eyni tokende istifade etmek lazim gelir.
     13 bendi de oxu
-    14 https pull push ????
+    14 https pull push ???? hoqqatest1?
 
 5 git add .  latest file changed
 6 git commit 
