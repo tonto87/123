@@ -3,9 +3,18 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
 
 
 1 git clone  "fayl repository from web https or ssh"
-2 git add  "file name"
+2 git add  "file name" yeni fayl 
 3 git commit fayl basligidi
+   Step Follow these steps to save your commit and exit the editor.
+    A newly opened editor is usually in normal mode. Use i to switch to the insert mode.
+    On the first line, write your commit message and hit esc to switch back to normal mode.
+    Type :wq to save and exit the editor.
+
+
 4 git push
+   Step Istese eger
+    github.com da settingsde en asagida developer settingsde he pc ye gore token yaratmaq
+    ve ya eyni tokende istifade etmek lazim gelir.
 
 5 git add .  latest file changed
 6 git commit 
@@ -20,5 +29,20 @@ using git add . or git add <filename>.
 Step 2:
 Then delete them easily using command git rm -f <filename> here rm=remove and -f=forcely.
 
+and get learn more 12.16 am 10.10.2022
 
-and get learn more 11:15 pm 21.09.2022
+9 git status for check fayllari 4,5 ci emeliyyatlar arasi etmek olar
+
+
+about git ssh and tokens
+git ssh token yaratmaq
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
+$ ssh-keygen -t ed25519 -C "your_email@example.com"
+
+git ssh tokeni copy etmek
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+$ clip < ~/.ssh/id_ed25519.pub
+
+eger ssh keys varsa onu yoxlamaq
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
+$ ls -al ~/.ssh
