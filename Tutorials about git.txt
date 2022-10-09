@@ -17,7 +17,7 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
     ve ya github.com da settingsde en asagida developer settingsde he pc ye gore token yaratmaq
     ve ya eyni tokende istifade etmek lazim gelir.
     13 bendi de oxu
-    14 https pull push ???? https
+    14 oxu 
 
 5 git add .  latest file changed
 6 git commit 
@@ -54,4 +54,5 @@ $ ls -al ~/.ssh
 
 Ps: https ile pull dan sonra problem siz push etmek haqqinda melumat tapsam 14 u bende daxil edecem.
 
-14 https pull push ????? 
+14 Win 7 ssh elave edende de https de pull edir ama push ede bilmir token sehvi verir ama tam bilmirem neye gore.
+belkede sehv yoxdur ama win 10 da ssh token elave edende pull/push edir collaborate de problem yoxdur.
