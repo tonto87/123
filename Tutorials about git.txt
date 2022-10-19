@@ -72,7 +72,7 @@ belkede sehv yoxdur ama win 10 da ssh token elave edende pull/push edir collabor
   3 //There is no step three. Just commit and push to GitHub as you normally would; for instance, if your current branch is named main:
       git add file.psd  //sonraki stepler 2,5
       git commit -m "Add design file"  //sonraki stepler 6,15
-      git push origin main   //sonraki stepler 7
+      git push origin main   //sonraki stepler 7  origin main branch a gore deyisir sehifedeki branclarda master ,main ve ya diger branchlara push laizm gelende burdaki imi qeyd etmek lazimdir
 
 
 
