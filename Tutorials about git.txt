@@ -1,9 +1,10 @@
 https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
 https://git-lfs.github.com/  git large
+https://gitlab.com  large file er ucun buna da baxmaq olar Free features: 5GB storage [1] 10GB transfer per month [2] 400 CI/CD minutes per month. 
 
 
 1: git clone  "fayl repository from web https or ssh" // ssh ile clone edende push edende ssh qurulmus oldugu ucun rahat olur 
-2: git add  "file name" //yeni fayl /File 300mb plus olarsa 16 ya bax.
+2: git add  "file name" //yeni fayl /File 300mb plus olarsa 15 ya bax.
 3: git commit //fayl basligidi
    Step Follow these steps to save your commit and exit the editor.
     A newly opened editor is usually in normal mode. Use i to switch to the insert mode.
@@ -58,6 +59,7 @@ Ps: https ile pull dan sonra problem siz push etmek haqqinda melumat tapsam 14 u
 belkede sehv yoxdur ama win 10 da ssh token elave edende pull/push edir collaborate de problem yoxdur.
 
 15: git large file ler ucun git lfs install etmek lazimdir. sonra 16 e bax stepler ucun
+    git large minus ceheti Every account using Git Large File Storage receives 1 GB of free storage and 1 GB a month of free bandwidth. If the bandwidth and storage quotas are not enough, you can choose to purchase an additional quota for Git LFS.
 
 16: 1 stepden sonra 
   1 //Download and install the Git command line extension. Once downloaded and installed, set up Git LFS for your user account by running: You only need to run this once per user account
