@@ -1,17 +1,17 @@
 https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+https://git-lfs.github.com/  git large
 
 
-
-1 git clone  "fayl repository from web https or ssh"  ssh ile clone edende push edende ssh qurulmus oldugu ucun rahat olur 
-2 git add  "file name" yeni fayl 
-3 git commit fayl basligidi
+1: git clone  "fayl repository from web https or ssh" // ssh ile clone edende push edende ssh qurulmus oldugu ucun rahat olur 
+2: git add  "file name" //yeni fayl /File 300mb plus olarsa 16 ya bax.
+3: git commit //fayl basligidi
    Step Follow these steps to save your commit and exit the editor.
     A newly opened editor is usually in normal mode. Use i to switch to the insert mode.
     On the first line, write your commit message and hit esc to switch back to normal mode.
     Type :wq to save and exit the editor.
 
 
-4 git push
+4: git push
    Step/Istese eger
     /*https://github.com/settings/keys de*/ 10,11 ssh bendleri edenden sonra push etmek rahatdi.
     ve ya github.com da settingsde en asagida developer settingsde he pc ye gore token yaratmaq
@@ -19,12 +19,12 @@ https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.ht
     13 bendi de oxu
     14 oxu 
 
-5 git add .  latest file changed
-6 git commit 
-7 git push
+5: git add .  //latest file changed
+6: git commit -m "Comment"  //15 e bax elave melumat ucun
+7: git push
 
 
-8 git fayllari silmek
+8: git fayllari silmek
 A very simple answer is.
 Step 1:
 Firstly add your untracked files to which you want to delete:
@@ -34,25 +34,51 @@ Then delete them easily using command git rm -f <filename> here rm=remove and -f
 
 and get learn more 12.16 am 10.10.2022
 
-9 git status for check fayllari 4,5 ci emeliyyatlar arasi etmek olar
+9: git status for check fayllari 4,5 ci emeliyyatlar arasi etmek olar
 
 
-10 about git ssh and tokens
+10: about git ssh and tokens
 git ssh token yaratmaq
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
 $ ssh-keygen -t ed25519 -C "your_email@example.com"
 
-11 git ssh tokeni copy etmek
+11: git ssh tokeni copy etmek
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 $ clip < ~/.ssh/id_ed25519.pub
 
-12 eger ssh keys varsa onu yoxlamaq
+12: eger ssh keys varsa onu yoxlamaq
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys
 $ ls -al ~/.ssh
 
-13 eger https den pull olsa geri push edende problem yaradir ama ssh 10,11 benddeki kimi token yaradib push edende bir problem olmur.
+13: eger https den pull olsa geri push edende problem yaradir ama ssh 10,11 benddeki kimi token yaradib push edende bir problem olmur.
 
 Ps: https ile pull dan sonra problem siz push etmek haqqinda melumat tapsam 14 u bende daxil edecem.
 
-14 Win 7 ssh elave edende de https de pull edir ama push ede bilmir token sehvi verir ama tam bilmirem neye gore.
+14: Win 7 ssh elave edende de https de pull edir ama push ede bilmir token sehvi verir ama tam bilmirem neye gore.
 belkede sehv yoxdur ama win 10 da ssh token elave edende pull/push edir collaborate de problem yoxdur.
+
+15: git large file ler ucun git lfs install etmek lazimdir. sonra 16 e bax stepler ucun
+
+16: 1 stepden sonra 
+  1 //Download and install the Git command line extension. Once downloaded and installed, set up Git LFS for your user account by running: You only need to run this once per user account
+     git lfs install edirik 
+  2 //In each Git repository where you want to use Git LFS, select the file types you'd like Git LFS to manage (or directly edit your .gitattributes). You can configure additional file extensions at anytime.
+     git lfs track "*.psd"  
+      sonra Now make sure .gitattributes is tracked:
+  2.1 git add .gitattributes  
+  //Note that defining the file types Git LFS should track will not, by itself, convert any pre-existing files to Git LFS, such as files on other branches or in your prior commit history. To do that, use the git lfs migrate(1) command, which has a range of options designed to suit various potential use cases.
+  3 //There is no step three. Just commit and push to GitHub as you normally would; for instance, if your current branch is named main:
+      git add file.psd  //sonraki stepler 2,5
+      git commit -m "Add design file"  //sonraki stepler 6,15
+      git push origin main   //sonraki stepler 7
+
+
+
+
+
+
+
+
+
+
+
